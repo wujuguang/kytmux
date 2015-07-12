@@ -13,7 +13,7 @@ ln -s ~/kytmux/tmux.conf ~/.tmux.conf
 ln -s ~/kytmux/tmux-powerline ~/.tmux-powerline
 
 # 安装tmux-powerline依赖与字体
-pip install powerline-status
+sudo pip install powerline-status
 wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
 wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
 
@@ -23,8 +23,8 @@ mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 fc-cache -vf ~/.fonts/
 
 # 自定义状态栏
-~/.tmux-powerlinerc/generate_rc.sh
-cp ~/.tmux-powerline/themes/default.sh mine.sh
+~/.tmux-powerline/generate_rc.sh
+cp ~/.tmux-powerline/themes/default.sh ~/.tmux-powerline/themes/mine.sh
 mv ~/.tmux-powerlinerc.default ~/.tmux-powerlinerc
 # 修改~/.tmux-powerline/themes/mine.sh ~/.tmux-powerlinerc
 
@@ -32,3 +32,6 @@ mv ~/.tmux-powerlinerc.default ~/.tmux-powerlinerc
 tmux new-session -d
 tmux run "~/kytmux/tmux/plugins/tpm/scripts/install_plugins.sh"
 tmux kill-session
+
+echo "配置完毕!"
+echo "你可能需要手动修改: ~/.tmux-powerline/themes/mine.sh ~/.tmux-powerlinerc 文件!"
