@@ -1,12 +1,13 @@
-# kyTmux
+# kytmux
 
 My tmux development environment Settings.
 
 # 安装
 
 ### 下载代码
-- git clone https://github.com/wujuguang/kytmux ~/kytmux    
-- git clone https://github.com/tmux-plugins/tpm.git ~/kytmux/tmux/plugins/tpm
+- git clone https://github.com/wujuguang/kytmux.git ~/kytmux/
+- git clone https://github.com/tmux-plugins/tpm.git ~/kytmux/tmux/plugins/tpm/
+- git clone https://github.com/erikw/tmux-powerline.git ~/kytmux/tmux-powerline/
 
 ### 创建链接
 - ln -s ~/kytmux/tmux ~/.tmux    
@@ -20,5 +21,7 @@ Open tmux and hit `prefix + I` to fetch all plugins.
 
 所有插件的安装通过 [`tpm`](https://github.com/tmux-plugins/tpm).
 
-# 一键安装
-下载执行 setup.sh: wget https://raw.githubusercontent.com/wujuguang/kytmux/master/setup.sh && sh setup.sh
+# 一键安装(推荐)
+下载执行 setup.sh:
+
+wget https://raw.githubusercontent.com/wujuguang/kytmux/master/setup.sh && sh setup.sh
