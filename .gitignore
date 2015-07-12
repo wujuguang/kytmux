@@ -1,0 +1,5 @@
+.idea/
+tmux/plugins/*
+tmux/resurrect/*
+vendor/*
+tmux-powerline/*

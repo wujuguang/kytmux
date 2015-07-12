@@ -1,0 +1,17 @@
+没开tmux时使用vim以及开tmux后使用vim主题颜色不一致
+
+开始在.tmux.conf 中设置set -g default-terminal linux 解决了颜色问题，
+但后来发现vim中自定义的快捷键F1-F12 都失效了，按键会打出一个大写的字母，而不是预定义的功能。
+
+在.tmux.conf 中设置 set -g default-terminal screen-256color 快捷键问题解决，但颜色又不一致。
+
+最后解决方法：
+在.tmux.conf 中设置:
+set -g default-terminal screen-256color
+
+在.bashrc和.zshrc中设置:
+export term=terminal
+
+在.vimrc中设置:
+set term=screen
+注意放置的问题
