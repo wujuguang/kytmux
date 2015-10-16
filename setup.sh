@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sh ./ubuntu-env.sh
+
 git clone https://github.com/wujuguang/kytmux.git ~/kytmux/
 git clone https://github.com/erikw/tmux-powerline.git ~/kytmux/tmux-powerline/
 git clone https://github.com/tmux-plugins/tpm.git ~/kytmux/tmux/plugins/tpm/
